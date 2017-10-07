@@ -15,7 +15,7 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Selfie Share"
-        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(importPicture))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(importPicture))
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,6 +44,8 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         images.insert(image, at: 0)
         collectionView?.reloadData()
     }
+    
+    // bottom of p 576 says there are 3 more methods, but I only see 2.
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
