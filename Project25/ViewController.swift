@@ -45,7 +45,7 @@ class ViewController: UICollectionViewController, UINavigationControllerDelegate
         collectionView?.reloadData()
     }
     
-    // bottom of p 576 says there are 3 more methods, but I only see 2.
+    // bottom of p 576 says there are 3 more methods, but I only see 2. (the 2 above)
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
